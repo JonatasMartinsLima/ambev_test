@@ -13,7 +13,7 @@ import java.util.List;
 public class OrderService {
 
     @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+    RedisTemplate<String, Object> redisTemplate;
 
     private final OrderRepository repository;
 

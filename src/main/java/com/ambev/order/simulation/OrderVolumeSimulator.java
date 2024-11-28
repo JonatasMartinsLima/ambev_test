@@ -38,7 +38,7 @@ public class OrderVolumeSimulator implements CommandLineRunner {
         System.out.println("Simulação de envio de pedidos concluída.");
     }
 
-    private Order createOrder(int id) {
+    Order createOrder(int id) {
         Order order = new Order();
         order.setCustomerName("Cliente " + id);
         order.setTotalValue(Math.random() * 1000);
@@ -47,7 +47,7 @@ public class OrderVolumeSimulator implements CommandLineRunner {
         return order;
     }
 
-    private List<OrderProduct> createProducts(int orderId) {
+    List<OrderProduct> createProducts(int orderId) {
         List<OrderProduct> products = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             OrderProduct product = new OrderProduct();
